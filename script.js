@@ -673,7 +673,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Update stats on landing page
     animateStats();
+    
+    // Generate diamond particles for background
+    createDiamondParticles();
 });
+
+// Generate floating diamond particles
+function createDiamondParticles() {
+    const container = document.getElementById('particlesContainer');
+    if (!container) return;
+    
+    const particles = ['💎', '💰', '⭐', '🔮', '✨'];
+    
+    for (let i = 0; i < 25; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'diamond-particle';
+        particle.textContent = particles[Math.floor(Math.random() * particles.length)];
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (Math.random() * 10 + 8) + 's';
+        particle.style.animationDelay = (Math.random() * 8) + 's';
+        particle.style.fontSize = (Math.random() * 20 + 15) + 'px';
+        particle.style.zIndex = '1';
+        container.appendChild(particle);
+    }
+}
 
 // Animate Landing Page Stats
 function animateStats() {

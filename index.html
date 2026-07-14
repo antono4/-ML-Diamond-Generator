@@ -13,8 +13,131 @@
     <meta property="og:type" content="website">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+/* ========================================
+   Video Background Styles
+   ======================================== */
+.video-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.video-bg-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 179, 71, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 204, 51, 0.15) 0%, transparent 50%);
+}
+
+.video-bg-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(transparent 0%, rgba(255, 215, 0, 0.05) 50%, transparent 100%);
+    animation: diamondRain 4s linear infinite;
+}
+
+@keyframes diamondRain {
+    0% { background-position: 0 -100%; }
+    100% { background-position: 0 100%; }
+}
+
+.particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.diamond-particle {
+    position: absolute;
+    animation: floatDiamond linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes floatDiamond {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Glowing orbs */
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.3;
+    animation: orbFloat 10s ease-in-out infinite;
+}
+
+.glow-orb.orb-1 {
+    width: 300px;
+    height: 300px;
+    background: #FFB347;
+    top: 10%;
+    left: 10%;
+}
+
+.glow-orb.orb-2 {
+    width: 200px;
+    height: 200px;
+    background: #FFCC33;
+    bottom: 20%;
+    right: 15%;
+    animation-delay: 5s;
+}
+
+.glow-orb.orb-3 {
+    width: 150px;
+    height: 150px;
+    background: #FFD700;
+    top: 50%;
+    left: 60%;
+    animation-delay: 2s;
+}
+
+@keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(20px, -20px) scale(1.1); }
+    50% { transform: translate(-10px, 10px) scale(0.9); }
+    75% { transform: translate(15px, 15px) scale(1.05); }
+}
+    </style>
 </head>
 <body>
+    <!-- Video Background -->
+    <div class="video-bg-container" id="videoBgContainer">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="particles-container" id="particlesContainer"></div>
+    </div>
+
     <!-- Landing Page (Before Login) -->
     <div id="landing-page" class="page">
         <nav class="navbar">
@@ -49,11 +172,7 @@
                 <button class="btn btn-cta" onclick="showPage('register')">Mulai Sekarang - GRATIS!</button>
             </div>
             <div class="hero-visual">
-                <div class="diamond-animation">
-                    <div class="diamond">💎</div>
-                    <div class="diamond diamond-2">💎</div>
-                    <div class="diamond diamond-3">💎</div>
-                </div>
+                <img src="ml-characters.svg" alt="MLBB Heroes" class="hero-characters">
             </div>
         </section>
 
