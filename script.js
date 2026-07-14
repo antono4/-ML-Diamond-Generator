@@ -346,7 +346,7 @@ function renderRewards() {
             <div class="reward-item">
                 <div class="reward-item-info">
                     <div class="reward-item-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Google_Play_Arrow_logo.svg" alt="Gift Card">
+                        <img src="google-play-icon.svg" alt="Gift Card">
                     </div>
                     <div class="reward-item-details">
                         <h4>${reward.name}</h4>
@@ -538,7 +538,7 @@ function openRedeemModal(rewardId) {
     document.getElementById('redeem-modal-content').innerHTML = `
         <div style="text-align: center; margin-bottom: 1.5rem;">
             <div class="reward-item-icon" style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--gradient-gold); border-radius: 15px; display: flex; justify-content: center; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Google_Play_Arrow_logo.svg" alt="Gift Card" style="width: 50px; height: 50px;">
+                <img src="google-play-icon.svg" alt="Gift Card" style="width: 50px; height: 50px;">
             </div>
             <h4>${reward.name}</h4>
             <p style="color: var(--primary); font-size: 1.3rem; font-weight: 700;">${reward.value}</p>
