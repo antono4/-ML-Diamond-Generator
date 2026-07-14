@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Diamond Rewards - Aplikasi Penghasil Diamond Legal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page (Before Login) -->
+    <div id="landing-page" class="page">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Mobile_Legend_Bang_Bang.svg" alt="MLBB" class="logo-img">
+                <span>ML Diamond Rewards</span>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" onclick="showPage('login')">Masuk</button>
+                <button class="btn btn-primary" onclick="showPage('register')">Daftar</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Dapatkan Diamond Mobile Legends <span class="highlight">GRATIS</span></h1>
+                <p class="hero-subtitle">Aplikasi rewards legal dan aman. Kumpulkan poin dari berbagai tugas dan tukarkan dengan gift card untuk membeli diamond!</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-users">127,453</span>
+                        <span class="stat-label">Pengguna Aktif</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-diamonds">5,847,293</span>
+                        <span class="stat-label">Diamond Telah Diberikan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Legal & Aman</span>
+                    </div>
+                </div>
+                <button class="btn btn-cta" onclick="showPage('register')">Mulai Sekarang - GRATIS!</button>
+            </div>
+            <div class="hero-visual">
+                <div class="diamond-animation">
+                    <div class="diamond">💎</div>
+                    <div class="diamond diamond-2">💎</div>
+                    <div class="diamond diamond-3">💎</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title">Cara Mendapatkan Diamond</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Isi Survei</h3>
+                    <p>Selesaikan survei singkat dan dapatkan poin reward</p>
+                    <span class="points-badge">+50-200 Poin</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Tonton Video</h3>
+                    <p>Tonton video iklan dan dapatkan hadiah poin</p>
+                    <span class="points-badge">+10-30 Poin</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Unduh Aplikasi</h3>
+                    <p>Instal dan jalankan aplikasi untuk poin tambahan</p>
+                    <span class="points-badge">+100-500 Poin</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Ajak Teman</h3>
+                    <p>Undang teman dan dapatkan bonus referral</p>
+                    <span class="points-badge">+500 Poin</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="rewards-preview">
+            <h2 class="section-title">Tukar Poin dengan Gift Card</h2>
+            <div class="rewards-grid">
+                <div class="reward-card">
+                    <div class="gift-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Google_Play_Arrow_logo.svg" alt="Google Play">
+                    </div>
+                    <h4>Google Play Gift Card</h4>
+                    <div class="reward-info">
+                        <span class="diamond-amount">86 Diamonds</span>
+                        <span class="points-cost">1,000 Poin</span>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <div class="gift-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Google_Play_Arrow_logo.svg" alt="Google Play">
+                    </div>
+                    <h4>Google Play Gift Card</h4>
+                    <div class="reward-info">
+                        <span class="diamond-amount">172 Diamonds</span>
+                        <span class="points-cost">2,000 Poin</span>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <div class="gift-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Google_Play_Arrow_logo.svg" alt="Google Play">
+                    </div>
+                    <h4>Google Play Gift Card</h4>
+                    <div class="reward-info">
+                        <span class="diamond-amount">430 Diamonds</span>
+                        <span class="points-cost">5,000 Poin</span>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <div class="gift-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Google_Play_Arrow_logo.svg" alt="Google Play">
+                    </div>
+                    <h4>Google Play Gift Card</h4>
+                    <div class="reward-info">
+                        <span class="diamond-amount">860+ Diamonds</span>
+                        <span class="points-cost">10,000 Poin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">Apa Kata Pengguna Kami</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Sudah 3x klaim gift card dan berhasil beli diamond. Legit banget!"</p>
+                    <div class="testimonial-author">— Rizky, Jakarta</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Aplikasi ringan, tugasnya gampang, dan penukarannya cepat."</p>
+                    <div class="testimonial-author">— Putri, Bandung</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Udah kasih tau temen semua, hasilnya oke!"</p>
+                    <div class="testimonial-author">— Decky, Surabaya</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Yuk Mulai Kumpulkan Diamond!</h2>
+            <p>Registrasi sekarang dan dapatkan bonus 100 poin selamat datang!</p>
+            <button class="btn btn-cta" onclick="showPage('register')">Daftar Gratis Sekarang</button>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Mobile_Legend_Bang_Bang.svg" alt="MLBB" class="logo-img">
+                    <span>ML Diamond Rewards</span>
+                </div>
+                <p class="footer-disclaimer">
+                    Disclaimer: Aplikasi ini adalah platform rewards legal. Poin ditukar dengan gift card yang bisa digunakan 
+                    untuk membeli diamond di game Mobile Legends. Kami tidak berafiliasi dengan Moonton.
+                </p>
+                <div class="footer-links">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+                <p class="copyright">© 2024 ML Diamond Rewards. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login-page" class="page hidden">
+        <div class="auth-container">
+            <button class="back-btn" onclick="showPage('landing')">← Kembali</button>
+            <div class="auth-card">
+                <div class="auth-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Mobile_Legend_Bang_Bang.svg" alt="MLBB" class="auth-logo">
+                    <h2>Masuk ke Akun</h2>
+                    <p>Selamat datang kembali!</p>
+                </div>
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="contoh@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Masuk</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Belum punya akun? <a href="#" onclick="showPage('register')">Daftar di sini</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Page -->
+    <div id="register-page" class="page hidden">
+        <div class="auth-container">
+            <button class="back-btn" onclick="showPage('landing')">← Kembali</button>
+            <div class="auth-card">
+                <div class="auth-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Mobile_Legend_Bang_Bang.svg" alt="MLBB" class="auth-logo">
+                    <h2>Daftar Akun Baru</h2>
+                    <p>Dapatkan 100 poin bonus selamat datang!</p>
+                </div>
+                <form id="register-form" onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="register-name">Nama Lengkap</label>
+                        <input type="text" id="register-name" placeholder="Masukkan nama lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" placeholder="contoh@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" placeholder="Minimal 8 karakter" required minlength="8">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-mlid">ID Mobile Legends</label>
+                        <input type="text" id="register-mlid" placeholder="Contoh: 123456789" required>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Saya setuju dengan <a href="#">Syarat & Ketentuan</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Daftar Sekarang</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Sudah punya akun? <a href="#" onclick="showPage('login')">Masuk di sini</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard (After Login) -->
+    <div id="dashboard-page" class="page hidden">
+        <nav class="dashboard-nav">
+            <div class="nav-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Mobile_Legend_Bang_Bang.svg" alt="MLBB" class="logo-img">
+                <span>ML Diamond Rewards</span>
+            </div>
+            <div class="nav-user">
+                <span class="user-points" id="nav-user-points">💎 0 Poin</span>
+                <button class="btn btn-sm" onclick="handleLogout()">Keluar</button>
+            </div>
+        </nav>
+
+        <div class="dashboard-content">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-item active" data-section="home" onclick="showSection('home')">
+                        <span>🏠</span> Beranda
+                    </a>
+                    <a href="#" class="sidebar-item" data-section="tasks" onclick="showSection('tasks')">
+                        <span>📋</span> Tugas
+                    </a>
+                    <a href="#" class="sidebar-item" data-section="rewards" onclick="showSection('rewards')">
+                        <span>🎁</span> Reward
+                    </a>
+                    <a href="#" class="sidebar-item" data-section="history" onclick="showSection('history')">
+                        <span>📜</span> Riwayat
+                    </a>
+                    <a href="#" class="sidebar-item" data-section="referral" onclick="showSection('referral')">
+                        <span>👥</span> Undang Teman
+                    </a>
+                </nav>
+            </aside>
+
+            <main class="main-content">
+                <!-- Home Section -->
+                <section id="section-home" class="content-section active">
+                    <div class="welcome-banner">
+                        <h2>Selamat Datang, <span id="user-name-display">User</span>! 👋</h2>
+                        <p>Kumpulkan poin dan tukarkan dengan gift card untuk diamond Mobile Legends!</p>
+                    </div>
+
+                    <div class="stats-cards">
+                        <div class="stat-card total-points">
+                            <div class="stat-icon">💎</div>
+                            <div class="stat-details">
+                                <span class="stat-label">Total Poin</span>
+                                <span class="stat-value" id="total-points-display">0</span>
+                            </div>
+                        </div>
+                        <div class="stat-card completed-tasks">
+                            <div class="stat-icon">✅</div>
+                            <div class="stat-details">
+                                <span class="stat-label">Tugas Selesai</span>
+                                <span class="stat-value" id="completed-tasks-display">0</span>
+                            </div>
+                        </div>
+                        <div class="stat-card diamonds-earned">
+                            <div class="stat-icon">🎮</div>
+                            <div class="stat-details">
+                                <span class="stat-label">Total Diamond (Est.)</span>
+                                <span class="stat-value" id="diamonds-earned-display">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h3>Aksi Cepat</h3>
+                        <div class="action-buttons">
+                            <button class="action-btn" onclick="showSection('tasks')">
+                                <span>📋</span> Ambil Tugas Baru
+                            </button>
+                            <button class="action-btn" onclick="showSection('rewards')">
+                                <span>🎁</span> Tukar Poin
+                            </button>
+                            <button class="action-btn" onclick="showSection('referral')">
+                                <span>👥</span> Undang Teman
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="daily-bonus">
+                        <div class="bonus-content">
+                            <div class="bonus-info">
+                                <h4>🎁 Bonus Harian</h4>
+                                <p>Login setiap hari untuk mendapatkan bonus poin!</p>
+                            </div>
+                            <button class="btn btn-bonus" id="claim-daily-btn" onclick="claimDailyBonus()">Klaim Sekarang</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tasks Section -->
+                <section id="section-tasks" class="content-section">
+                    <div class="section-header">
+                        <h2>Tugas Tersedia</h2>
+                        <p>Selesaikan tugas untuk mendapatkan poin reward</p>
+                    </div>
+
+                    <div class="tasks-grid" id="tasks-container">
+                        <!-- Tasks will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Rewards Section -->
+                <section id="section-rewards" class="content-section">
+                    <div class="section-header">
+                        <h2>Tukar Poin dengan Reward</h2>
+                        <p>Pilih gift card yang ingin Anda tukarkan</p>
+                    </div>
+
+                    <div class="rewards-list" id="rewards-container">
+                        <!-- Rewards will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- History Section -->
+                <section id="section-history" class="content-section">
+                    <div class="section-header">
+                        <h2>Riwayat Poin</h2>
+                        <p>Lihat semua aktivitas earning dan penukaran poin</p>
+                    </div>
+
+                    <div class="history-filters">
+                        <button class="filter-btn active" data-filter="all" onclick="filterHistory('all')">Semua</button>
+                        <button class="filter-btn" data-filter="earned" onclick="filterHistory('earned')">Perolehan</button>
+                        <button class="filter-btn" data-filter="redeemed" onclick="filterHistory('redeemed')">Penukaran</button>
+                    </div>
+
+                    <div class="history-list" id="history-container">
+                        <!-- History will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Referral Section -->
+                <section id="section-referral" class="content-section">
+                    <div class="section-header">
+                        <h2>Undang Teman</h2>
+                        <p>Ajak teman dan dapatkan 500 poin untuk setiap referral成功!</p>
+                    </div>
+
+                    <div class="referral-card">
+                        <div class="referral-info">
+                            <h3>Link Referral Anda</h3>
+                            <div class="referral-link-box">
+                                <input type="text" id="referral-link" readonly value="https://mldiamond.page.link/ref/abc123xyz">
+                                <button class="btn btn-copy" onclick="copyReferralLink()">Salin</button>
+                            </div>
+                        </div>
+                        <div class="referral-stats">
+                            <div class="ref-stat">
+                                <span class="ref-number" id="referral-count">0</span>
+                                <span class="ref-label">Teman Diundang</span>
+                            </div>
+                            <div class="ref-stat">
+                                <span class="ref-number" id="referral-earnings">0</span>
+                                <span class="ref-label">Poin dari Referral</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="referral-instructions">
+                        <h4>Cara Kerja Referral:</h4>
+                        <ol>
+                            <li>Salin link referral Anda</li>
+                            <li>Bagikan ke teman melalui media sosial, chat, dll</li>
+                            <li>Teman Anda mendaftar menggunakan link tersebut</li>
+                            <li>Dapatkan 500 poin untuk setiap teman yang berhasil daftar</li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Task Modal -->
+        <div id="task-modal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeTaskModal()">×</button>
+                <div class="modal-header">
+                    <h3 id="modal-task-title">Nama Tugas</h3>
+                </div>
+                <div class="modal-body" id="modal-task-content">
+                    <!-- Task content will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" onclick="closeTaskModal()">Batal</button>
+                    <button class="btn btn-primary" id="modal-complete-btn" onclick="completeTask()">Selesaikan</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Redeem Modal -->
+        <div id="redeem-modal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeRedeemModal()">×</button>
+                <div class="modal-header">
+                    <h3>Tukar Poin</h3>
+                </div>
+                <div class="modal-body" id="redeem-modal-content">
+                    <!-- Redeem content will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" onclick="closeRedeemModal()">Batal</button>
+                    <button class="btn btn-primary" id="redeem-confirm-btn" onclick="confirmRedeem()">Tukar Sekarang</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="success-modal" class="modal hidden">
+            <div class="modal-content success-modal-content">
+                <div class="success-icon">✅</div>
+                <h3 id="success-title">Berhasil!</h3>
+                <p id="success-message">Pesan sukses akan muncul di sini</p>
+                <button class="btn btn-primary" onclick="closeSuccessModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
