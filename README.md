@@ -1,5 +1,8 @@
 # 🎮 ML Diamond Rewards - Aplikasi Penghasil Diamond Legal
 
+> **Created by Antono**
+
+
 ![Status](https://img.shields.io/badge/status-aktif-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Platform](https://img.shields.io/badge/platform-Web-orange)
