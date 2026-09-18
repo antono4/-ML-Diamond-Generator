@@ -1,71 +1,66 @@
-<!-- README ini dihasilkan otomatis oleh .github/workflows/generate-readme.yml -->
-<!-- Jangan edit manual: perubahan akan ditimpa pada run berikutnya. -->
+<!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
+<!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
-<h1 align="center">ML Diamond Rewards 👋</h1>
+<h1 align="center">ML Diamond Rewards - Aplikasi Penghasil Diamond Legal 👋</h1>
 
 <p align="center">
-  <em>🌐 Web project -  Ml Diamond Generator</em>
+  <strong>Selesaikan survei singkat dan dapatkan poin reward</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/antono4/-ML-Diamond-Generator"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/-ML-Diamond-Generator-blue?logo=github"></a>
   <a href="https://antono4.github.io/-ML-Diamond-Generator/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
-  <img alt="Files" src="https://img.shields.io/badge/Files-11-informational">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/antono4/-ML-Diamond-Generator">
+  <img alt="Files" src="https://img.shields.io/badge/Files-14-informational">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-09-18 07:16:40 WIB-lightgrey">
 </p>
 
 ---
 
 ## 📖 Tentang
 
-Repository **`-ML-Diamond-Generator`** adalah proyek Node.js yang dibangun dengan HTML, CSS, JavaScript.
-Situs ini diterbitkan melalui **GitHub Pages** dan dapat diakses di [`https://antono4.github.io/-ML-Diamond-Generator/`](https://antono4.github.io/-ML-Diamond-Generator/).
+Repository **`-ML-Diamond-Generator`** adalah situs web pribadi / portofolio yang diterbitkan melalui **GitHub Pages**. Situs utama berada di [`https://antono4.github.io/-ML-Diamond-Generator/`](https://antono4.github.io/-ML-Diamond-Generator/).
 
 ## 🗂️ Struktur Proyek
 
 ```
 -ML-Diamond-Generator/
-.github/
-  workflows/
-.gitignore
-LICENSE
-favicon.svg
-google-play-icon.svg
-index.html
-ml-characters.svg
-ml-logo.svg
-package.json
-script.js
-styles.css
+├── index.html          # Halaman utama (landing / portofolio)
+├── assets/             # Aset statis (css, js, img, vendor)
+├── forms/               # Form handler (PHP)
 ```
 
 ## 🛠️ Teknologi
 
-Berdasarkan ekstensi berkas yang terdeteksi di repository:
+Berdasarkan isi repository, proyek ini menggunakan:
 
 - `HTML`
 - `CSS`
 - `JavaScript`
 
-> Total **11 berkas** di repository (di luar `.git`, `node_modules`, `dist`, dan `build`).
+> Total **14 file** terdeteksi di repository.
 
 ## 🚀 Menjalankan Secara Lokal
 
-Butuh Node.js:
+Karena ini situs statis (HTML/CSS/JS/PHP), cukup buka `index.html` di browser, atau jalankan server lokal:
 
 ```bash
-npm install
-npm run dev
+# Tanpa dependency
+python3 -m http.server 8000
+# lalu buka http://localhost:8000
+
+# atau dengan PHP (untuk form handler di forms/)
+php -S localhost:8000
 ```
 
 ## 📬 Kontak
 
 - GitHub: [antono4](https://github.com/antono4)
+- Situs: [https://antono4.github.io/-ML-Diamond-Generator/](https://antono4.github.io/-ML-Diamond-Generator/)
 
 ## 📄 Lisensi
 
-Proyek ini dilisensikan di bawah MIT License — lihat berkas [`LICENSE`](./LICENSE).
+Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
 ---
 
-<sub>README ini di-generate otomatis oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
+<sub>README ini di-generate otomatis pada **2026-09-18 07:16:40 WIB** oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
